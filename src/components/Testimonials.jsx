@@ -93,7 +93,7 @@ export default function Testimonials() {
           </div>
 
           <div className="flex flex-col lg:flex-row items-center justify-between bg-white rounded-lg shadow-lg border-t-4 border-[#3498DB] overflow-hidden relative z-10">
-            <div className="w-full lg:w-3/4 p-6 md:p-10 relative">
+            <div className="w-full  p-6 md:p-10 relative">
               <div className="text-lg text-[#34495E] mb-6 relative">
                 <Quote size={32} className="absolute -left-2 -top-4 text-[#3498DB] opacity-50" strokeWidth={2} />
                 <div className="pl-7 text-justify">
@@ -114,8 +114,8 @@ export default function Testimonials() {
               </div>
             </div>
 
-            <div className="w-full lg:w-1/4 bg-[#F8FBFF] p-6 flex justify-center items-center h-full">
-              <div className="relative">
+            {/* <div className="w-full lg:w-1/4 bg-[#F8FBFF] p-6 flex justify-center items-center h-full"> */}
+              {/* <div className="relative">
                 <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-md">
                   <img
                     src={testimonials[currentIndex].image}
@@ -126,8 +126,8 @@ export default function Testimonials() {
                 <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-[#F1C40F] rounded-full flex items-center justify-center shadow-md">
                   <Quote size={20} color="#34495E" />
                 </div>
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
           </div>
 
           <div className="flex justify-center mt-8 space-x-4">

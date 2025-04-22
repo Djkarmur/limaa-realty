@@ -22,19 +22,13 @@ const MortgageFooter = () => {
       <footer className="bg-neutral-500 text-white py-12 flex flex-col md:flex-row items-center justify-between">
         <div className='flex justify-center items-center'>
         <img
-          src="./footer1.png"
+          src="./limma_navbar.png"
           alt="limaa"
           height="200"
           width="200"
           className="rounded-md h-28 w-52 m-4"
         />
-        <img
-          src="./eho.jpg"
-          alt="limaa"
-          height="100"
-          width="100"
-          className="rounded-md h-auto w-20 m-4"
-        />
+        
         </div>
        
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -105,6 +99,15 @@ const MortgageFooter = () => {
               </a>
             </div>
           </div>
+        </div>
+        <div className='absolute bottom-[1px]  right-10 flex justify-center items-center'>
+        <img
+          src="./eho.jpg"
+          alt="limaa"
+          height="50"
+          width="70"
+          className="rounded-md h-auto w-10 m-4"
+        />
         </div>
       </footer>
     </div>

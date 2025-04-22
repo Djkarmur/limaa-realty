@@ -31,9 +31,9 @@ const HomePage = () => {
           <div className="absolute -inset-2 rounded-full border-4 border-gray-200"></div>
           {/* Image */}
           <img
-            src="/dhaval_photo.png" // Replace with your image URL
+            src="/final_photo.png" 
             alt="Mortgage"
-            className="rounded-full object-cover relative z-10"
+            className="rounded-full object-contain relative z-10"
           />
         </div>
       </section>
@@ -52,7 +52,7 @@ const HomePage = () => {
               <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5m4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5" />
             </svg>
           </div>
-          <h2 className="text-3xl text-[#3498DB] font-bold">124</h2>
+          <h2 className="text-3xl text-[#3498DB] font-bold">30</h2>
           <p className='text-[#34495E]'>Happy Clients</p>
         </span>
         <span className="flex justify-center items-center flex-col gap-2 mx-auto md:mx-0">
@@ -70,7 +70,7 @@ const HomePage = () => {
               <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z" />
             </svg>
           </div>
-          <h2 className="text-3xl text-[#3498DB] font-bold">168</h2>
+          <h2 className="text-3xl text-[#3498DB] font-bold">20</h2>
           <p className='text-[#34495E]'>Projects</p>
         </span>
         <span className="flex justify-center items-center flex-col gap-2">
@@ -86,7 +86,7 @@ const HomePage = () => {
               <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5" />
             </svg>
           </div>
-          <h2 className="text-3xl text-[#3498DB] font-bold">6453</h2>
+          <h2 className="text-3xl text-[#3498DB] font-bold">1512</h2>
           <p className='text-[#34495E]'>Hours Of Support</p>
         </span>
         {/* <span className="flex justify-center items-center flex-col gap-2">
@@ -133,7 +133,7 @@ const HomePage = () => {
             <div className="absolute -inset-2 rounded-full border-4 border-gray-200"></div>
             {/* Image */}
             <img
-              src="/final1.png" 
+              src="/sign.png" 
               alt="Woman working on laptop"
               className="rounded-full object-fill relative z-10"
             />
