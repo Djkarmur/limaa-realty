@@ -21,16 +21,16 @@ const MortgageFooter = () => {
       {/* Footer */}
       <footer className="bg-neutral-500 text-white py-12 flex flex-col md:flex-row items-center justify-between">
         <div className='flex justify-center items-center'>
-        <img
-          src="./limma_navbar.png"
-          alt="limaa"
-          height="200"
-          width="200"
-          className="rounded-md h-28 w-52 m-4"
-        />
-        
+          <img
+            src="./limma_navbar.png"
+            alt="limaa"
+            height="200"
+            width="200"
+            className="rounded-md h-28 w-52 m-4"
+          />
+
         </div>
-       
+
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
 
           {/* About Us */}
@@ -51,7 +51,7 @@ const MortgageFooter = () => {
             <p className="mb-2">#1 Fullerton, CA 92831</p>
             <p className="mb-2">Phone: (909) 859-9977</p>
             <a href="mailto:limaarealty1@gmail.com" className="hover:underline">
-            limaarealty1@gmail.com
+              limaarealty1@gmail.com
             </a>
           </div>
 
@@ -100,7 +100,7 @@ const MortgageFooter = () => {
             </div>
           </div>
         </div>
-        <div className='absolute bottom-[1px]  right-10 flex justify-center items-center'>
+        {/* <div className='absolute bottom-[1px]  right-10 flex justify-center items-center'>
         <img
           src="./eho.jpg"
           alt="limaa"
@@ -108,6 +108,15 @@ const MortgageFooter = () => {
           width="70"
           className="rounded-md h-auto w-10 m-4"
         />
+        </div> */}
+        <div className='absolute bottom-[1px] left-0 right-0 lg:left-4 lg:right-auto flex items-center'>
+          <img
+            src="./eho.jpg"
+            alt="limaa"
+            height="50"
+            width="70"
+            className="rounded-md h-auto w-8 m-4 mr-auto lg:mr-0 lg:ml-auto mb-4"
+          />
         </div>
       </footer>
     </div>
