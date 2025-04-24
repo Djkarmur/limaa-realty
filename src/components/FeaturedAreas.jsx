@@ -446,28 +446,28 @@ const FeaturedAreas = () => {
     const { next, prev } = getNextPrev();
 
     return (
-        <div className="py-16 px-4 md:px-8 bg-gray-50">
-            <div className="max-w-7xl mx-auto">
+        <div className="py-16 px-4 sm:px-6 md:px-8 lg:px-8 bg-gray-50">
+            <div className="max-w-7xl mx-auto ">
                 {/* Header Section */}
                 <div className="text-center mb-12">
-                    <h3 className="text-4xl font-bold mb-4 text-[#34495E] inline-block">
+                    <h3 className="text-3xl sm:text-4xl font-bold mb-4 text-[#34495E] inline-block">
                         Explore Featured Areas
-                        <div className=" h-1 w-24 bg-[#3498DB] bottom-0 ml-50 transform -translate-x-1/2 mt-2"></div>
+                        <div className=" h-1 w-24 bg-[#3498DB] bottom-0 ml-40 md:ml-50 transform -translate-x-1/2 mt-2"></div>
                     </h3>
-                    <p className="text-gray-600 max-w-2xl mx-auto">
+                    <p className="text-gray-600 max-w-2xl md:mx-0  mx-12 md:ml-30 lg:ml-40 xl:ml-85">
                         Discover your dream home in our handpicked selection of exceptional neighborhoods,
                         where community spirit meets modern living in the Phoenix metropolitan area.
                     </p>
                 </div>
 
                 {/* Category Navigation */}
-                <div className="flex justify-center mb-10">
-                    <div className="inline-flex p-1 bg-gray-100 rounded-full shadow-md">
+                {/* <div className="flex justify-center mb-10  w-full ">
+                    <div className="w-full max-w-full p-1 bg-gray-100 rounded-full shadow-md overflow-x-scroll whitespace-nowrap">
                         {categories.map(category => (
                             <button
                                 key={category}
                                 onClick={() => handleCategoryChange(category)}
-                                className={`px-6 py-2 rounded-full transition-all duration-300 ${activeCategory === category
+                                className={`px-6 py-2 rounded-full whitespace-nowrap transition-all duration-300 ${activeCategory === category
                                         ? "bg-blue-500 text-white shadow-lg"
                                         : "text-gray-700 hover:bg-gray-200"
                                     }`}
@@ -476,10 +476,29 @@ const FeaturedAreas = () => {
                             </button>
                         ))}
                     </div>
-                </div>
+                </div> */}
+                <div className="flex justify-center mb-10 w-full lg:ml-50 xl:ml-85">
+    <div className="w-[80vw] max-w-[90vw] overflow-x-auto pb-2 -mx-2 px-2"> 
+        <div className="inline-flex p-1 bg-gray-100 rounded-full shadow-md min-w-max">
+            {categories.map(category => (
+                <button
+                    key={category}
+                    onClick={() => handleCategoryChange(category)}
+                    className={`px-6 py-2 rounded-full whitespace-nowrap transition-all duration-300 ${
+                        activeCategory === category
+                            ? "bg-blue-500 text-white shadow-lg"
+                            : "text-gray-700 hover:bg-gray-200"
+                    }`}
+                >
+                    {category}
+                </button>
+            ))}
+        </div>
+    </div>
+</div>
 
                 {/* Area Cards Grid */}
-                <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-opacity duration-300 ${isAnimating ? 'opacity-0' : 'opacity-100'}`}>
+                <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-opacity md:mx-0 mx-10 duration-300 ${isAnimating ? 'opacity-0' : 'opacity-100'}`}>
                     {visibleItems.map(area => (
                         <div
                             key={area.id}

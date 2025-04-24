@@ -41,7 +41,7 @@ const MortgageCalculator = () => {
   ];
 
   return (
-    <div className="w-full max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-4  mt-4">
+    <div className="w-full max-w-4xl mx-auto bg-white rounded-lg lg:shadow-lg p-4  mt-4">
       <div className="p-6 bg-gradient-to-r from-blue-500 to-blue-600 mb-4">
           <h1 className="text-xl md:text-2xl font-bold text-center text-white">
           Mortgage Calculator
