@@ -82,6 +82,9 @@ export default function Testimonials() {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-[#34495E] mb-2">Testimonials</h2>
           <div className="w-24 h-1 bg-[#3498DB] mx-auto"></div>
+          <div className="text-center py-8">
+        <h2 className="text-3xl text-gray-600 font-semibold">What our clients say about us!</h2>
+      </div>
           <p className="mt-6 text-[#34495E] max-w-3xl mx-auto">
             Don't just take our word for it - hear from the countless families who trusted us to help them find their perfect home and turned their real estate dreams into reality.
           </p>

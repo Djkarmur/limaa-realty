@@ -18,6 +18,8 @@ import RealEstateServices from "./components/RealEstateServices";
 import Testimonials from "./components/Testimonials";
 import WhyChooseUs from "./components/WhyChooseUs";
 import NapkinAnalysis from "./components/NavComponents/NapkinAnalysis";
+import Contact from "./components/Contact";
+import { Bounce, ToastContainer } from "react-toastify";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -101,10 +103,24 @@ function App() {
               <Route path="/napkin-analysis" element={<NapkinAnalysis />} />
             </Routes>
             <div id="contact">
+              <Contact />
               <MortgageFooter />
             </div>
               
           </div>
+          <ToastContainer
+              position="bottom-center"
+              autoClose={2000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="dark"
+              transition={Bounce}
+            />
         </div>
 
       </Router>

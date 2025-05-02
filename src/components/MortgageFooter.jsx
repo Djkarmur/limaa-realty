@@ -5,9 +5,9 @@ const MortgageFooter = () => {
   return (
     <div className="w-full">
       {/* Testimonial Section */}
-      <div className="text-center py-8">
+      {/* <div className="text-center py-8">
         <h2 className="text-3xl text-gray-600 font-semibold">What our clients say about us!</h2>
-      </div>
+      </div> */}
 
       {/* CTA Section */}
       <div className="bg-slate-600 text-white text-center py-16">
