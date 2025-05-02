@@ -46,7 +46,7 @@ const LoanCalculator = () => {
   ];
 
   return (
-    <div className="w-full max-w-4xl mx-auto p-6 grid md:grid-cols-2 gap-8 shadow-lg mt-4 bg-white rounded-lg">
+    <div className="w-full max-w-4xl mx-auto p-6 grid md:grid-cols-2 gap-8 lg:shadow-lg mt-4 bg-white rounded-lg">
       
      
       <div>
@@ -71,7 +71,7 @@ const LoanCalculator = () => {
             <select 
               value={term}
               onChange={(e) => setTerm(e.target.value)}
-              className="w-full p-2 border rounded-md bg-white text-gray-600 font-medium"
+              className="w-75 p-2 border rounded-md bg-white text-gray-600 font-medium"
             >
               <option>30 Years</option>
               <option>20 Years</option>
@@ -90,7 +90,7 @@ const LoanCalculator = () => {
                 max="10000000"
                 value={loanAmount}
                 onChange={(e) => setLoanAmount(Number(e.target.value))}
-                className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer text-gray-600 font-medium"
+                className="w-75 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer text-gray-600 font-medium"
               />
               <div className="mt-2 bg-gray-50 p-2 rounded text-right text-gray-600 font-medium">
                 ${loanAmount.toLocaleString()}.00
@@ -108,7 +108,7 @@ const LoanCalculator = () => {
                 step="0.125"
                 value={interestRate}
                 onChange={(e) => setInterestRate(Number(e.target.value))}
-                className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer text-gray-600 font-medium"
+                className="w-75 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer text-gray-600 font-medium"
               />
               <div className="mt-2 bg-gray-50 p-2 rounded text-right text-gray-600 font-medium">
                 {interestRate.toFixed(2)}%
